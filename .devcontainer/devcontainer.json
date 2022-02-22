@@ -1,0 +1,24 @@
+{
+	"name": "vscode dbt extensions bug reproducible demo",
+	"build": {
+		"dockerfile": "Dockerfile"		
+	},
+	"settings": {
+        "terminal.integrated.profiles.linux": {
+            "bash": {
+              "path": "/usr/bin/bash"	  
+            }
+          }
+  },
+
+	"extensions": [
+		"samuelcolvin.jinjahtml",
+		"dorzey.vscode-dbt-language",
+		"bastienboutonnet.vscode-dbt",
+		"henriblancke.vscode-dbt-formatter"
+		// "innoverio.vscode-dbt-power-user"
+	  // "eamodio.gitlens"
+	],
+
+	"postCreateCommand": "dbt deps",
+}
