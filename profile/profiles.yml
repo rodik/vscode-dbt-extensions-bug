@@ -1,0 +1,17 @@
+reproducible-demo-profile:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+
+      account: abc123
+      user: user
+      password: psswd
+
+      role: user_role
+      database: database_name
+      warehouse: warehouse_name
+      schema: dbt_schema
+      threads: 1
+      client_session_keep_alive: False
+      query_tag: anything

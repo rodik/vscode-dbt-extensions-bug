@@ -8,17 +8,26 @@
             "bash": {
               "path": "/usr/bin/bash"	  
             }
-          }
-  },
+          },
+		"terminal.integrated.env.linux": {
+			"DBT_PROFILES_DIR": "/workspaces/vscode-dbt-extensions-bug/profile"
+		},
+		"files.associations": {
+			"*.sql": "jinja-sql"
+		},
+		// Extensions settings
+		"extensions.dbt.manifestLocation": "/workspaces/vscode-dbt-extensions-bug/reproducible-demo/target/manifest.json"
+  	},
 
 	"extensions": [
 		"samuelcolvin.jinjahtml",
 		"dorzey.vscode-dbt-language",
-		"bastienboutonnet.vscode-dbt",
-		"henriblancke.vscode-dbt-formatter"
+		"bastienboutonnet.vscode-dbt"
+		// "henriblancke.vscode-dbt-formatter"
 		// "innoverio.vscode-dbt-power-user"
-	  // "eamodio.gitlens"
+		// "eamodio.gitlens"
 	],
-
-	"postCreateCommand": "dbt deps",
+	"containerEnv": {		
+		"DBT_PROFILES_DIR": "/workspaces/vscode-dbt-extensions-bug/profile"
+	}
 }
