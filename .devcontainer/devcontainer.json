@@ -22,9 +22,9 @@
 	"extensions": [
 		"samuelcolvin.jinjahtml",
 		"dorzey.vscode-dbt-language",
-		"bastienboutonnet.vscode-dbt"
-		// "henriblancke.vscode-dbt-formatter"
-		// "innoverio.vscode-dbt-power-user"
+		"bastienboutonnet.vscode-dbt",
+		"henriblancke.vscode-dbt-formatter",
+		"innoverio.vscode-dbt-power-user"
 		// "eamodio.gitlens"
 	],
 	"containerEnv": {		
